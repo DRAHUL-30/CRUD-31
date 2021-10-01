@@ -24,7 +24,7 @@ function Users() {
     // );
     const userdata=await fetch("https://61238a96124d8800175682cd.mockapi.io/users");
     const data=await userdata.json();
-    // console.log(data);
+    console.log(data);
     let tempusers = context.users.filter((x) => x.id !== deleteid);
     context.setUsers(tempusers);
   };
